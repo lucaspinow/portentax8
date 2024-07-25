@@ -1,0 +1,29 @@
+java -cp jade.jar:codigoTeste.jar jade.Boot -container -host 10.20.38.118 agente1:ipb.agents.ComPlat1
+java -cp jade.jar:investigacao-1.0-SNAPSHOT.jar jade.Boot -container -host 192.168.1.108 agente1:ipb.agents.HelloWorldAgent
+
+
+java -cp weka.jar:jade.jar:investigacao-1.0-SNAPSHOT.jar jade.Boot -container -host 192.168.1.108 RegressionAgent:ipb.agents.regression.RegressionAgent
+
+java -cp weka.jar:jade.jar:investigacao-1.0-SNAPSHOT.jar jade.Boot -container -host 192.168.1.108 RegressionAgentEDGE:ipb.agents.EDGE.RegressionLinearAgentEDGE
+
+java -cp weka.jar:jade.jar:investigacao-1.0-SNAPSHOT.jar jade.Boot -container -host 192.168.1.108 RegressionAgentEDGE:ipb.agents.EDGE.RegressionM5PAgentEDGE
+
+java -cp weka.jar:jade.jar:investigacao-1.0-SNAPSHOT.jar jade.Boot -container -host 192.168.1.108 RegressionAgentEDGE:ipb.agents.regressionPC.RegressionM5PAgent
+
+java -cp jade.jar jade.Boot -gui
+
+java -cp weka.jar:jade.jar:investigacao-1.0-SNAPSHOT.jar jade.Boot -container  RegressionAgentEDGE:ipb.agents.regressionPC.RegressionM5PAgent
+
+cd /home/pi/cursoMAS
+
+
+
+
+# INICIO
+  1 - Caminho:  cd /home/pi/cursoMAS
+  
+  2 - HelloWorld: java -cp jade.jar:investigacao-1.0-SNAPSHOT.jar jade.Boot -container -host 192.168.1.108 HelloWorldAgentEDGE:ipb.agents.EDGE.HelloWorldAgentEDGE
+  
+  3 - RegressionM5P: java -cp weka.jar:jade.jar:investigacao-1.0-SNAPSHOT.jar jade.Boot -container  RegressionAgentEDGE:ipb.agents.regressionPC.RegressionM5PAgent
+  
+  4 - NeuralNetwork: java -cp weka.jar:jade.jar:investigacao-1.0-SNAPSHOT.jar jade.Boot -container  RegressionAgentEDGE:ipb.agents.regressionPC.RegressionNeuralNetworkAgent
