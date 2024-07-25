@@ -1,1 +1,1 @@
-http://raspberrypi:7778/acc
+http://portenta-x8-140dc209dab7022b:7778/acc
